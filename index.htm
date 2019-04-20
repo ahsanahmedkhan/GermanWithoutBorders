@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+<head>
+
+<title>dazplus_v1</title>
+
+
+<style type="text/css">
+.loading {	
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+  	margin-left: -100px;
+    position: absolute;
+    z-index: 1000;
+    background: transparent url() no-repeat 0 0;
+}
+
+
+</style>
+<script src="app/global.js?bust=1.0.0.201902070832_1555517417665"></script>
+<script data-main="main" src="lib/require.js?bust=1.0.0.201902070832_1555517417665"></script>
+<link rel="manifest" href="manifest.json" />
+</head>
+<body>
+	<div aria-hidden="true" style="height:0px;" id="sb4Svg"><svg focusable="false" xmlns="http://www.w3.org/2000/svg"  width="0"   height="0">   <defs>        <linearGradient id="sb4FillNone" x1="0%" y1="100%" x2="0%" y2="0%"></linearGradient>    </defs></svg></div>
+	<!--<div id="a508" tabindex="1" aria-label="lesson" style="left:5%;width: 90%; height: 90%; display: block; position: absolute;" class="notouch"></div>-->
+	<!--<div style="position:absolute"><button id="lesson_begin" aria-label="lesson begin" role="tooltip" style="width:1px;height:1px;border:none;background-color:rgba(255,255,255,0)"></button></div>
+	<div style="position:absolute"><button id="tab_previous" style="width:1px;height:1px;border:none;background-color:rgba(255,255,255,0)"></button></div>-->
+	<!--<div id="temp_previous_div" aria-hidden="true"></div>-->
+	<!--<div id="temp_previous_div"></div>-->	
+	<main tabindex="1" aria-label="lesson">
+	<div id="playerstage" class="sb4stage"
+		style="float: left; border: 0px; border-color: red; border-style: dashed;">
+	</div>
+	</main>
+	<div id="player-msgbox" style="width:10px;height:20px"></div>
+	<div id="fullscreen" ><div id="loadingDiv" class="loading">
+<style type='text/css'>
+ .uil-spin-css {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+@-webkit-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-ms-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.uil-spin-css > div {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+  margin-top: 4px;
+  position: absolute;
+}
+.uil-spin-css > div > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: #9a9a9a;
+}
+.uil-spin-css > div:nth-of-type(1) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.uil-spin-css > div:nth-of-type(1) {
+  -ms-transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(2) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.12s;
+  -moz-animation-delay: 0.12s;
+  -webkit-animation-delay: 0.12s;
+  -o-animation-delay: 0.12s;
+  animation-delay: 0.12s;
+}
+.uil-spin-css > div:nth-of-type(2) {
+  -ms-transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(3) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.uil-spin-css > div:nth-of-type(3) {
+  -ms-transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(4) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.37s;
+  -moz-animation-delay: 0.37s;
+  -webkit-animation-delay: 0.37s;
+  -o-animation-delay: 0.37s;
+  animation-delay: 0.37s;
+}
+.uil-spin-css > div:nth-of-type(4) {
+  -ms-transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(5) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.uil-spin-css > div:nth-of-type(5) {
+  -ms-transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(6) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.62s;
+  -moz-animation-delay: 0.62s;
+  -webkit-animation-delay: 0.62s;
+  -o-animation-delay: 0.62s;
+  animation-delay: 0.62s;
+}
+.uil-spin-css > div:nth-of-type(6) {
+  -ms-transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(7) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+.uil-spin-css > div:nth-of-type(7) {
+  -ms-transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+}
+.uil-spin-css > div:nth-of-type(8) > div {
+  -ms-animation: uil-spin-css 1s linear infinite;
+  -moz-animation: uil-spin-css 1s linear infinite;
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  -o-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -ms-animation-delay: 0.87s;
+  -moz-animation-delay: 0.87s;
+  -webkit-animation-delay: 0.87s;
+  -o-animation-delay: 0.87s;
+  animation-delay: 0.87s;
+}
+.uil-spin-css > div:nth-of-type(8) {
+  -ms-transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+  -moz-transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+  -webkit-transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+  -o-transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+}
+ </style>
+ <div class='uil-spin-css' id="loader" style='transform:scale(0.55)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div></div></div>
+	<div id="playFull" class='fullscreen notVisible'></div>
+	<!--<div id="temp_next_div"></div>-->
+	<!--<div id="temp_next_div" aria-hidden="true"></div>
+	<div style="position:absolute" ><button aria-hidden="true" id="tab_next" style="width:1px;height:1px;border:none;background-color:rgba(255,255,255,0)"></button></div>
+	<div style="position:absolute" ><button id="lesson_end"  aria-label="lesson end" role="tooltip" style="width:1px;height:1px;border:none;background-color:rgba(255,255,255,0)"></button></div>-->	
+	
+</body>
+</html>
+<!-- SB4_Lesson_INFO
+BUILD:201902070832 
+TYPE:sb4
+ID:l6D20HF06MNM1LUVSJR6S5AT9IS
+VER:4.4.0
+LESSON_WIDTH:470
+LESSON_HEIGHT:863
+-->
