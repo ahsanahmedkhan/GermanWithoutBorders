@@ -1,5 +1,5 @@
 //SW Version
-const version = 2.0;
+const version = 3.0;
 
 //Static Cashe - app shell
 const appAssets = [

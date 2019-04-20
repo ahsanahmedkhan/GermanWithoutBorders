@@ -2,7 +2,7 @@
 if(navigator.serviceWorker){
 	navigator.serviceWorker.register('sw.js').catch(console.error);
 }
-//its done..
+//its done..//its done..
 
 
 require.config(sb4runtime.requiresetting);
